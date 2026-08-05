@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": [
+          "YBDU266T6X.com.ups.ncmmobile",
+          "YBDU266T6X.com.ups.ncmmobile.test"
+        ],
+        "paths": [
+          "/mobile-auth/callback",
+          "/mobile-auth/callback/*"
+        ]
+      }
+    ]
+  }
+}
