@@ -1,0 +1,10 @@
+/* stylelint-disable selector-id-pattern */
+#__tealiumGDPRecModal h2 {
+  text-wrap: unset;
+}
+/* stylelint-enable selector-id-pattern */
+
+.section.footnote .default-content-wrapper p {
+  color: var(--gray-1);
+  font-size: var(--body-font-size-s);
+}
