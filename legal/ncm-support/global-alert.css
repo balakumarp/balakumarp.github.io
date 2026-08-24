@@ -1,0 +1,147 @@
+/* When the modal is open, ensure the image inside the global alert is not broken. */
+.modal-open .global-alert img {
+    width: 100%;
+}
+
+/* stylelint-disable */
+body.ups-appPage .global-alert img {
+    width: 100%;
+}
+/* stylelint-enable */
+
+.global-alert {
+    background-color: #ffc400;
+    color: #000;
+    text-align: center;
+    padding: 10px var(--section-inline-padding);
+    font-size: 15px;
+    height: 40px;
+}
+
+.yellow-alert-wrapper .global-alert.hide {
+    display: none;
+}
+
+.global-alert-modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0 0 0 / 50%);
+}
+
+.global-alert-modal-content {
+    background-color: #fefefe;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 80%; 
+    max-width: 600px;
+    text-align: left;
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    flex-direction: row-reverse;
+}
+
+.global-alert .global-alert-text {
+    flex: 0 1 auto;
+    min-width: 0;     
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@media (width < 770px) {
+    .global-alert-modal-content{
+        max-height: 400px;
+        overflow-y: auto;
+    }
+}
+
+.global-alert-close-button {
+    color: #aaa;
+    margin-top: -10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    height: fit-content;
+}
+
+.global-alert-close-button:hover,
+.global-alert-close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}   
+
+.global-alert button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.global-alert button:hover {
+    background-color: #333;
+}
+
+.global-alert .more-details {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.global-alert .more-details:hover {
+    color: #333;
+}
+
+.global-alert p.global-alert-title {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    min-width: 0; 
+  
+}
+
+.global-alert .global-alert-modal-content p.modal-content-text {
+    display: block;
+    text-align: center;
+}
+
+[dir='rtl'] .global-alert .global-alert-modal-content p.modal-content-text {
+    margin-right: 0;
+    text-align: right;
+}
+
+.global-alert picture {
+    height: 1.5rem;
+    width: 1.5rem;
+    flex: 0 0 auto;
+    display: block;
+}
+
+.global-alert .hide {
+    display: none;
+}
+
+.global-alert-modal-link {
+    height: 18px;
+}
+
+.global-alert-modal-link svg{
+    vertical-align: baseline;
+}

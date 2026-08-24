@@ -1,0 +1,212 @@
+.ups-title-container .default-content-wrapper {
+  margin-block-end: 3rem;
+}
+
+.ups-title-container.table-container .default-content-wrapper,
+.ups-title-container.blockquote-container .default-content-wrapper {
+  margin-block-end: 0;
+}
+
+.ups-title-container .default-content-wrapper p strong {
+  font-weight: 500;
+}
+
+.healthcare .section.ups-title-container:has(.default-content-wrapper + .ups-title-wrapper) .default-content-wrapper {
+  margin-block-end: 0;
+}
+
+main .section .ups-title-wrapper h3.keyline u::after {
+  display: unset;
+}
+
+.healthcare main .section .ups-title-wrapper h5.keyline u::after,
+.healthcare main .section .ups-title-wrapper h4.keyline u::after {
+  display: unset;
+}
+
+.ups-title-container[data-id^="link"] ul>li {
+  margin-block-end: 1rem;
+}
+
+.ups-title-wrapper {
+  padding-bottom: 1.25rem;
+}
+
+.ups-title.block {
+  display: flex;
+  max-width: 50rem;
+  margin: 0 auto;
+  margin-block-end: 0;
+}
+
+main .section .ups-title.block,
+.ups-title-container .link-list.block {
+  margin-block-end: 0;
+}
+
+.section.ups-title-container .table-wrapper .table.block {
+  margin-block-end: 2rem;
+}
+
+.ups-title img {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+}
+
+[dir='rtl'] .ups-title img {
+  margin-left: 1.5rem;
+  margin-right: 0;
+}
+
+.ups-title.block h2 {
+  text-wrap: auto;
+}
+
+.ups-title.block h2 sup {
+  font-size: 75%;
+}
+
+.ups-title.block h5,
+.ups-title.block h6 {
+  font-size: 1rem;
+}
+
+.ups-title .default-content-wrapper p em {
+  font-size: 1.25rem;
+}
+
+.ups-title-container .default-content-wrapper p {
+  margin-top: 0;
+}
+
+.ups-title-container .default-content-wrapper a.button.outline {
+  border: 0.125rem solid;
+  font-weight: 500;
+}
+
+.section.ups-title-container.link-list-container {
+  padding-top: 0;
+}
+
+.section.ups-title-container .default-content-wrapper p {
+  display: block;
+  margin-block-end: 1.5rem;
+  text-align: left;
+}
+
+/* Add top padding only if this is the first ups-title in the section and no other block is above it */
+.section.ups-title-container:nth-of-type(1) {
+  padding-top: 3rem;
+}
+
+.section.ups-title-container .default-content-wrapper li p {
+  margin-block-end: 0;
+}
+
+[dir='rtl'] .section.ups-title-container .default-content-wrapper p {
+  text-align: right;
+  margin-right: 0;
+}
+
+.section.ups-title-container .default-content-wrapper p:not(.button-wrapper) a {
+  font-weight: 400;
+  word-break: break-word;
+}
+
+.section.bullet-alphabet.ups-title-container .default-content-wrapper p strong>a {
+  font-weight: bold;
+}
+
+.section.ups-title-container .default-content-wrapper p a.accent {
+  text-align: left;
+}
+
+[dir='rtl'] .section.ups-title-container .default-content-wrapper p a.accent {
+  text-align: right;
+}
+
+.section.ups-title-container:has(.default-content-wrapper) .ups-title-wrapper{
+  padding: 0;
+}
+
+@media (width >=770px) {
+  .ups-title.block {
+    display: flex;
+  }
+
+  .ups-title .default-content-wrapper p em {
+    font-size: 1.25rem;
+  }
+
+  .ups-title.align-center.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ups-title.align-center .keyline {
+    text-align: center;
+  }
+
+  .ups-title.align-center .keyline u::after {
+    margin: 1rem auto 0;
+  }
+
+  .section.ups-title-container:has(.align-center) .default-content-wrapper p {
+    text-align: center;
+  }
+
+  .section.ups-title-container:has(+ .tabs-container) .default-content-wrapper p {
+    font-size: var(--body-font-size-l);
+  }
+
+  .healthcare .section.background-arc.ups-title-container .ups-title.block {
+    max-width: 62.5rem;
+  }
+
+  .healthcare .ups-title-container .default-content-wrapper {
+    max-width: 62.5rem;
+  }
+
+  .ups-title-container .ups-title-wrapper:has(img)+.default-content-wrapper {
+    max-width: 39rem;
+  }
+
+  .background-arc.ups-title-container .default-content-wrapper:last-child {
+    padding-bottom: 1rem;
+  }
+
+  .ups-title-container p.button-wrapper {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+}
+
+@media (width >=1280px) {
+  .background-arc.ups-title-container {
+    margin-bottom: 2rem;
+  }
+
+  .ups-title.block h5 {
+    font-size: 1.25rem;
+  }
+
+  .ups-title-container .default-content-wrapper {
+    margin-block-end: 5rem;
+  }
+
+  .ups-title-container .default-content-wrapper p.img-wrapper img {
+    width: auto;
+  }
+
+  .supplychain .ups-title-container .default-content-wrapper p.img-wrapper picture {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.ups-title:not(:has(u)) {
+  padding-bottom: 24px;
+}
